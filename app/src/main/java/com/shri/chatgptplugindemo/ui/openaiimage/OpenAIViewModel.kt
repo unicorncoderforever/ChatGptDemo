@@ -27,7 +27,7 @@ class OpenAIViewModel: ViewModel() {
     val imageUri: LiveData<List<ImageURL>>  = _imageUri
 
     init {
-        openAi = OpenAI("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")
+        openAi = OpenAI("api-token")
     }
 
     private var _loading =  MutableLiveData<Boolean>().apply {
